@@ -36,10 +36,12 @@ localhostForwarding=true
 Step 3: Set Up Ubuntu Environment
 Launch Ubuntu from Start Menu and run:
 ```
-bash
+```
 # Update system packages
 sudo apt update && sudo apt upgrade -y
+```
 
+```
 # Install essential dependencies
 sudo apt install -y \
     git python3-dev python3-pip python3-testresources \
@@ -58,14 +60,14 @@ npm install -g yarn
 # Install wkhtmltopdf
 sudo apt install -y wkhtmltopdf
 Step 4: Configure MariaDB
-bash
+
 # Secure MariaDB installation
 sudo mysql_secure_installation
 
 # Configure MariaDB for Frappe
 sudo mysql -u root -p
 In MySQL prompt:
-
+```
 SQL
 -- Create database user for Frappe
 CREATE USER 'frappe'@'localhost' IDENTIFIED BY 'your_password';
