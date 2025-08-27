@@ -17,9 +17,12 @@ After restart:
 
 PowerShell
 # Set WSL2 as default version
+```
 wsl --set-default-version 2
+```
 
 # Install Ubuntu 22.04 LTS
+```
 wsl --install -d Ubuntu-22.04
 Step 2: Configure WSL2 Performance (Optional but Recommended)
 Create .wslconfig file in your Windows user directory (%UserProfile%):
@@ -32,7 +35,7 @@ swap=2GB
 localhostForwarding=true
 Step 3: Set Up Ubuntu Environment
 Launch Ubuntu from Start Menu and run:
-
+```
 bash
 # Update system packages
 sudo apt update && sudo apt upgrade -y
